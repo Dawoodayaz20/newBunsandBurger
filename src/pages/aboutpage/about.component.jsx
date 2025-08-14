@@ -1,9 +1,11 @@
 import React from "react";
 import Header from '../../components/header/header.component';
+import BurgerChatWidget from "../chatpage/chatWidget.component";
 
 const AboutPage = () => {
     return(
         <>
+        <BurgerChatWidget />
         <Header />
         <section className="my-56 md:my-40 flex-col flex md:flex-row items-center">
             <img src='/images/Buns&Burgers.webp' className="ml-4 w-80 mt-10 md:mt-0 h-48 md:w-screen md:h-56 rounded-md" alt="Buns and Burgers" />

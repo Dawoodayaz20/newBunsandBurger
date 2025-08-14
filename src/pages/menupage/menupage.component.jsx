@@ -2,6 +2,7 @@ import React from "react";
 import ItemCard from "../../components/ItemCards/item-card.component";
 import menuData from "../../assets/burgersdata/burgers_data";
 import Header from "../../components/header/header.component";
+import BurgerChatWidget from "../chatpage/chatWidget.component";
 
 class MenuPage extends React.Component {
     constructor() {
@@ -16,6 +17,7 @@ class MenuPage extends React.Component {
         return(
         <>
         <Header/>
+        <BurgerChatWidget />
         <div className="mt-60 md:mt-40">
             <h1 className="text-red-700 font-bold text-4xl mt-40 text-center">Burgers</h1>
             <div className="inline-flex flex-wrap justify-items-center justify-between ml-10 md:ml-0">

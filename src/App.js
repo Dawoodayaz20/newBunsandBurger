@@ -10,7 +10,6 @@ import DealsPage from './pages/dealspage/deals.component';
 import LoginPage from './pages/loginpage/loginPage';
 import ProfilePage from './pages/profilePage/Profile_Page';
 import Footer from './components/footer/footer.component';
-import BurgerChatWidget from './pages/chatpage/chatWidget.component';
 import { CartProvider } from './components/cart/cartcontext';
 import { AuthProvider, useAuth } from './appwrite/auth-context';
 import './App.css'
@@ -70,8 +69,6 @@ function AppContent() {
 
   return (
     <Router>
-      <BurgerChatWidget />
-        {/* <Header /> */}
       <Routes>
         <Route path="/" element={user ? <HomePage /> : <Navigate to="/auth" replace />} />
         <Route path="/chat" element={user ? <ChatBotPage /> : <Navigate to="/auth" replace />} />
