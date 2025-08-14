@@ -34,11 +34,6 @@ const Login = () => {
         src='/images/logo.png'
       />
       <h1 className="text-2xl font-bold">Buns and Burgers</h1>
-      <div className="relative transition duration-1000">
-        <Link to="/cart">
-          <i className="fa-solid fa-cart-shopping text-yellow-200 text-xl hover:scale-110 transition-transform"></i>
-        </Link >
-      </div>
       </header>
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-yellow-100 to-orange-200">
       <div className="bg-white shadow-2xl rounded-2xl p-8 w-full max-w-md">

@@ -4,7 +4,7 @@ import Header from "../header/header.component";
 import BurgerChatWidget from "../../pages/chatpage/chatWidget.component";
 
 const CartItems = () => {
-    const { cart, removeFromCart, clearCart } = useCart(); // ✅ Get cart functions
+    const { cart, removeFromCart, clearCart } = useCart(); // Get cart functions
 
 
     return (
