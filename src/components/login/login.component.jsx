@@ -25,34 +25,45 @@ const Login = () => {
   };
 
   return (
-    <div>
-    <header className="bg-red-700 text-yellow-200 fixed w-full top-0 left-0 flex flex-col md:flex-row justify-between items-center z-50 py-4 px-8">
+    <>
+    {/* <header className="bg-red-700 text-yellow-200 fixed w-full top-0 left-0 flex flex-col md:flex-row justify-between items-center z-50 py-4 px-8">
       <img 
         id="logopic" 
         className="h-16 w-16 rounded-full" 
         alt="Buns and Burger Logo" 
         src='/images/logo.png'
       />
-      <h1 className="text-2xl font-bold">Buns and Burgers</h1>
-      </header>
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-yellow-100 to-orange-200">
-      <div className="bg-white shadow-2xl rounded-2xl p-8 w-full max-w-md">
-        <h2 className="text-3xl font-bold text-center text-orange-600 mb-6">
-          Buns & Burger {isSignUp ? 'Sign Up' : 'Login'}
-        </h2>
+      <h1 className="text-2xl font-bold">Buns and Burgers</h1> */}
+      {/* </header> */}
+      <header className="bg-red-700 text-yellow-200 fixed w-full top-0 left-0 flex items-center z-50 py-4 px-8">
+  <img 
+    id="logopic" 
+    className="h-16 w-16 rounded-full" 
+    alt="Buns and Burger Logo" 
+    src='/images/logo.png'
+  />
+  <h1 className="absolute left-1/2 transform -translate-x-1/2 text-2xl font-bold">
+    Buns and Burgers
+  </h1>
+</header>
+        <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-yellow-100 to-orange-200">
+          <div className="bg-white shadow-2xl rounded-2xl p-8 w-full max-w-md">
+            <h2 className="text-3xl font-bold text-center text-orange-600 mb-6">
+              Buns & Burger {isSignUp ? 'Sign Up' : 'Login'}
+            </h2>
 
-        <form className="space-y-4" onSubmit={handleSubmit}>
-          <div>
-            <label className="block text-sm font-medium text-gray-700">Email</label>
-            <input
-              type="email"
-              className="w-full px-4 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-400"
-              placeholder="you@example.com"
-              value={email}
-              onChange={e => setEmail(e.target.value)}
-              required
-            />
-          </div>
+          <form className="space-y-4" onSubmit={handleSubmit}>
+            <div>
+              <label className="block text-sm font-medium text-gray-700">Email</label>
+              <input
+                type="email"
+                className="w-full px-4 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-400"
+                placeholder="you@example.com"
+                value={email}
+                onChange={e => setEmail(e.target.value)}
+                required
+              />
+            </div>
 
           <div>
             <label className="block text-sm font-medium text-gray-700">Password</label>
@@ -103,7 +114,7 @@ const Login = () => {
         </p>
       </div>
     </div>
-    </div>
+    </>
   );
 };
 
