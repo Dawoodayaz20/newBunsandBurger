@@ -1,25 +1,8 @@
 import { createContext, useContext, useState, useEffect } from "react";
 import { ID } from "appwrite";
 import { account } from "./config";
-// import { useNavigate } from "react-router-dom";
 
 const AuthContext = createContext(null);
-
-// export const fetchUser = async (setUser, setloading) => {
-//       try {
-//         const user = await account.get();
-//         setUser(user);
-//         return(user)
-//       } catch (err) {
-//         if (err.message.includes("missing scope")) {
-//           setUser(null); // guest user, not logged in
-//         } else {
-//           console.error("Unexpected error in account.get():", err);
-//         }
-//       } finally{
-//         setloading(false); 
-//       }
-//     }
 
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
